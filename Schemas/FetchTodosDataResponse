@@ -20,7 +20,7 @@
             "new"
           ]
         },
-        "he": {
+        "hel": {
           "type": "string",
           "default": "",
           "examples": [

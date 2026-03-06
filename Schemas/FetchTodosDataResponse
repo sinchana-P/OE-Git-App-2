@@ -7,7 +7,24 @@
     "type": "json-schema",
     "destination": "source",
     "schemaSource": "file",
-    "name": "FetchTodosDataResponse"
+    "name": "FetchTodosDataResponse",
+    "content": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "FetchTodosDataResponse",
+      "type": "object",
+      "properties": {
+        "hello": {
+          "type": "string",
+          "default": "",
+          "examples": [
+            "new"
+          ]
+        }
+      },
+      "required": [
+        "hello"
+      ]
+    }
   },
   "itemType": "appSchemas",
   "gitEnabled": true

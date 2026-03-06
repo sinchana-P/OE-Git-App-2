@@ -4,7 +4,7 @@
   "workflowName": "Fetch Todos Valid",
   "itemType": "workflow",
   "appId": "mMAExBqyMVSBLAsYXCjqJ",
-  "folderId": "LcucEJcjTqkXOsuVfWvOx",
+  "folderId": "uKyGsRiewIBZgfncgpquC",
   "type": "ORCHESTRATION",
   "version": "0.0.1",
   "steps": [
@@ -130,8 +130,8 @@
   ],
   "diagram": {
     "bfYrZDELhcSBMpCYEYJLT": {
-      "x": -304,
-      "y": -352,
+      "x": -272,
+      "y": -128,
       "handles": [
         {
           "type": "target",

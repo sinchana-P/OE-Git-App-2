@@ -19,6 +19,13 @@
           "examples": [
             "new"
           ]
+        },
+        "hellos": {
+          "type": "string",
+          "default": "",
+          "examples": [
+            "new"
+          ]
         }
       },
       "required": [

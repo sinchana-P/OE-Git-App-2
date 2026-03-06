@@ -7,7 +7,24 @@
     "type": "json-schema",
     "destination": "source",
     "schemaSource": "file",
-    "name": "OutputSchema"
+    "name": "OutputSchema",
+    "content": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "OutputSchema",
+      "type": "object",
+      "properties": {
+        "hello": {
+          "type": "string",
+          "default": "",
+          "examples": [
+            "hellp"
+          ]
+        }
+      },
+      "required": [
+        "hello"
+      ]
+    }
   },
   "itemType": "appSchemas",
   "gitEnabled": true

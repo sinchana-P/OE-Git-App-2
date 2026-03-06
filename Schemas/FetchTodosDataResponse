@@ -20,7 +20,7 @@
             "new"
           ]
         },
-        "hell": {
+        "he": {
           "type": "string",
           "default": "",
           "examples": [

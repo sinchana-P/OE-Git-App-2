@@ -1,0 +1,218 @@
+{
+  "id": "noIYcsNocUPynCWHflBiZ",
+  "name": "Fetch Todos Valid",
+  "workflowName": "Fetch Todos Valid",
+  "itemType": "workflow",
+  "appId": "mMAExBqyMVSBLAsYXCjqJ",
+  "folderId": "FywAVjRGcuALdqmYYkAaZ",
+  "type": "ORCHESTRATION",
+  "version": "0.0.1",
+  "steps": [
+    {
+      "id": "bfYrZDELhcSBMpCYEYJLT",
+      "stepName": "RESTClient",
+      "stepType": "SIMPLE",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "RESTClient",
+        "activityGroup": "HTTP",
+        "activityType": "SIMPLE",
+        "output": "mIYNjWzvRKsxRrQDNYOcv",
+        "name": "RESTClient",
+        "description": "",
+        "scheme": "HTTPS",
+        "uri": "$:{\"id\":{},\"name\":\"/todos\"}",
+        "host": "$:{\"id\":{},\"name\":\"jsonplaceholder.typicode.com\"}",
+        "port": "$:{\"id\":{},\"name\":\"\"}",
+        "method": "GET",
+        "authContext": "",
+        "cachingEnabled": false,
+        "cacheTimeout": 30,
+        "timeout": 15000,
+        "sendToEngage": false,
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "authType": "NO_AUTH",
+        "auth": "ref:{\"id\":\"\",\"name\":\"\"}",
+        "enableActivityTesting": true,
+        "activityStatus": "APPROVED",
+        "showHttpFormSelectionPanel": false,
+        "sourceSchemas": [
+          "tvPQPXBlKOUwduucBHtmA"
+        ]
+      }
+    },
+    {
+      "id": "SXaCYQoRXUbVUPmpDeGPk",
+      "stepName": "End",
+      "stepType": "END",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "End",
+        "activityGroup": "Common",
+        "activityType": "END",
+        "name": "End",
+        "sourceSchemas": [
+          "bfYrZDELhcSBMpCYEYJLT",
+          "tvPQPXBlKOUwduucBHtmA"
+        ],
+        "targetSchema": "iSAFgMKHWOKsjDnBCXZhl",
+        "inputRootArrayName": "property"
+      }
+    },
+    {
+      "id": "tvPQPXBlKOUwduucBHtmA",
+      "stepName": "RESTService",
+      "stepType": "EVENT_SOURCE",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "RESTService",
+        "activityGroup": "HTTP",
+        "activityType": "EVENT_SOURCE",
+        "name": "RESTService",
+        "description": "",
+        "path": "/todos",
+        "method": [
+          "GET"
+        ],
+        "allowedMediaTypes": [
+          "application/json"
+        ],
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "output": "",
+        "activityStatus": "APPROVED",
+        "showHttpFormSelectionPanel": false,
+        "sourceSchemas": []
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "efxhFFBqYQjrjMnGXUJnt",
+      "from": "tvPQPXBlKOUwduucBHtmA",
+      "to": "bfYrZDELhcSBMpCYEYJLT",
+      "handleMap": {
+        "source": "tvPQPXBlKOUwduucBHtmA_1",
+        "target": "bfYrZDELhcSBMpCYEYJLT_1"
+      },
+      "name": "",
+      "description": "",
+      "type": "DEFAULT",
+      "lineType": "step",
+      "lineColor": "#8c8c8c"
+    },
+    {
+      "id": "EVFAQxglUbkYJFeUDwaFO",
+      "from": "bfYrZDELhcSBMpCYEYJLT",
+      "to": "SXaCYQoRXUbVUPmpDeGPk",
+      "handleMap": {
+        "source": "bfYrZDELhcSBMpCYEYJLT_2",
+        "target": "SXaCYQoRXUbVUPmpDeGPk_1"
+      },
+      "name": "",
+      "description": "",
+      "type": "DEFAULT",
+      "lineType": "step",
+      "lineColor": "#8c8c8c"
+    }
+  ],
+  "diagram": {
+    "bfYrZDELhcSBMpCYEYJLT": {
+      "x": -288,
+      "y": -240,
+      "handles": [
+        {
+          "type": "target",
+          "position": "left",
+          "id": "bfYrZDELhcSBMpCYEYJLT_1"
+        },
+        {
+          "type": "source",
+          "position": "right",
+          "id": "bfYrZDELhcSBMpCYEYJLT_2"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": "left"
+    },
+    "SXaCYQoRXUbVUPmpDeGPk": {
+      "x": -64,
+      "y": -240,
+      "handles": [
+        {
+          "type": "source",
+          "position": "left",
+          "id": "SXaCYQoRXUbVUPmpDeGPk_1"
+        }
+      ],
+      "sourcePosition": null,
+      "targetPosition": "left"
+    },
+    "tvPQPXBlKOUwduucBHtmA": {
+      "x": -512,
+      "y": -240,
+      "handles": [
+        {
+          "type": "source",
+          "position": "right",
+          "id": "tvPQPXBlKOUwduucBHtmA_1"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": null
+    }
+  },
+  "mappings": {
+    "SXaCYQoRXUbVUPmpDeGPk": {
+      "metaInfo": {
+        "id": "SXaCYQoRXUbVUPmpDeGPk",
+        "versionInfo": {
+          "version": "1.0.0"
+        },
+        "name": "End",
+        "description": ""
+      },
+      "mappings": {
+        "End": {
+          "property": [
+            {
+              "__aexpr__": "$.RESTClient.httpResponse.body"
+            },
+            {
+              "__arrayItemName__": "property"
+            }
+          ]
+        }
+      },
+      "attributes": {}
+    }
+  },
+  "notes": [
+    {
+      "id": "NEPFrHxFdmejccqFidQqN",
+      "position": {
+        "x": -816,
+        "y": -320
+      },
+      "description": "1. \"**<u>Low code No Code</u>**\" Platform.\n2. Payroll systems.\n3. OnBoarding employees.\n4. Use Existing API's & Automate the workflow.\n5. ",
+      "color": "#FEE6B1",
+      "width": 230,
+      "height": 223
+    }
+  ],
+  "config": {
+    "name": "Fetch Todos Valid"
+  }
+}

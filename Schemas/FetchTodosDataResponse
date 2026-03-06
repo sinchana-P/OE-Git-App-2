@@ -1,0 +1,14 @@
+{
+  "id": "mIYNjWzvRKsxRrQDNYOcv",
+  "name": "FetchTodosDataResponse",
+  "appId": "mMAExBqyMVSBLAsYXCjqJ",
+  "folderId": "eblbdARxcCFCYZTgJgisM",
+  "content": {
+    "type": "json-schema",
+    "destination": "source",
+    "schemaSource": "file",
+    "name": "FetchTodosDataResponse"
+  },
+  "itemType": "appSchemas",
+  "gitEnabled": true
+}

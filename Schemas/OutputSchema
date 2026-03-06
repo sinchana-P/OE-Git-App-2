@@ -1,0 +1,14 @@
+{
+  "id": "iSAFgMKHWOKsjDnBCXZhl",
+  "name": "OutputSchema",
+  "appId": "mMAExBqyMVSBLAsYXCjqJ",
+  "folderId": "eblbdARxcCFCYZTgJgisM",
+  "content": {
+    "type": "json-schema",
+    "destination": "source",
+    "schemaSource": "file",
+    "name": "OutputSchema"
+  },
+  "itemType": "appSchemas",
+  "gitEnabled": true
+}

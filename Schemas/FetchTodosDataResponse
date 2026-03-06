@@ -20,7 +20,7 @@
             "new"
           ]
         },
-        "hellos": {
+        "hell": {
           "type": "string",
           "default": "",
           "examples": [
